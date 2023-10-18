@@ -1,0 +1,72 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+ cout<<"SAMEEN WASEEM"<<endl;
+ //sum of first 10 natural numbers
+ cout<<"TASK-1"<<endl;
+ 
+ int x;
+ int sum=0;
+ for (int x=1 ; x<=10 ; x++)
+ {
+ sum+=x;}
+ cout<<"sum of first 10 natural numbers"<<sum<<endl;
+//end of task-1
+
+//Table of any number
+cout<<"TASK-2"<<endl;
+int multiplication=0;
+int y;
+cout<<"value of y:"<<endl;
+cin>>y;
+for (int a=1 ; a<=12 ;a++ ) {
+
+multiplication= y*a ;
+
+cout<<y<<"x"<<a<<"="<<multiplication<<endl;
+}
+//end of task-2
+
+//generate factorial
+cout<<"TASK-3"<<endl;
+cout<<"factorial of x"<<endl;
+int factorial=1;
+int x;
+cout<<"value of x:"<<endl;
+cin>>x;
+if(x>=0) {
+
+for (int y=0 ; y<x ; y++) {
+	factorial=factorial*(x-y);
+	cout<<factorial<<endl;}
+	
+
+}
+	else{
+		cout<<"invalid input";
+	}
+//end task-3
+
+//fibonacci sequence
+cout<<"TASK-4"<<endl;
+int a=0;
+int b=1;
+int num;
+int sum;
+cout<<"value of term to be displayed"<<endl;
+cin>>num;
+cout<<"fibonacci sequence is:"<<endl;
+cout<<a<<endl;
+cout<<b<<endl;
+for(int z=2 ; z<num ; z++) {
+	sum= a + b;
+	cout<<sum<<endl;
+	a=b;
+	b=sum;
+	sum=0;
+}
+//end of task4
+
+return 0; 
+}
